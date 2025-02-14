@@ -1,4 +1,75 @@
 # stonks
+
+**Introducción**
+
+Este proyecto tiene como objetivo analizar y extraer insights clave a partir de datos relacionados con tarifas (fees) y solicitudes de adelanto de efectivo (cash requests) dentro de Business Payments, una empresa de servicios financieros. A través de este estudio, se busca comprender mejor el comportamiento de los usuarios, evaluar el impacto de diferentes tipos de tarifas y detectar patrones que puedan ayudar en la toma de decisiones estratégicas.
+
+**Conjuntos de Datos**
+
+El análisis se basa en dos conjuntos de datos principales:
+
+1- Solicitudes de Efectivo (cash requests)
+
+Registra todas las transacciones en las que los usuarios solicitan adelantos de efectivo, permitiendo analizar tendencias de uso y posibles factores de riesgo.
+
+Número de registros: 23,970
+
+Número de columnas: 16
+
+Principales columnas:
+
+id: Identificador único de la solicitud.
+
+amount: Monto solicitado.
+
+status: Estado de la solicitud (approved, pending, rejected).
+
+user_id: Identificador del usuario que realizó la solicitud.
+
+reimbursement_date: Fecha estimada de reembolso.
+
+transfer_type: Tipo de transferencia utilizada.
+
+2. Tarifas (fees)
+
+Contiene información detallada sobre las tarifas aplicadas a los usuarios por diferentes conceptos, como pagos instantáneos, incidentes de reembolso fallidos y aplazamientos de pago.
+
+Número de registros: 21,061
+
+Número de columnas: 13
+
+Principales columnas:
+
+id: Identificador único de la tarifa.
+
+cash_request_id: Identificador de la solicitud de efectivo relacionada.
+
+type: Tipo de tarifa (instant_payment, split_payment, incident, postpone).
+
+status: Estado de la tarifa (confirmed, rejected, cancelled, accepted).
+
+total_amount: Monto total de la tarifa.
+
+created_at: Fecha de creación de la tarifa.
+
+**Objetivos**
+
+Exploración y limpieza de datos para garantizar calidad y consistencia.
+
+Identificación de patrones de uso y frecuencia de pagos para entender el comportamiento de los usuarios.
+
+Análisis de cohortes para entender la retención y el comportamiento de los usuarios a lo largo del tiempo.
+
+Modelo de clasificación para detectar usuarios con possibilidad de irse de la plataforma.
+
+Tecnologías y Herramientas Utilizadas
+
+Python: Análisis de datos con pandas, numpy, matplotlib, seaborn, skitlearn
+
+Google Colab: Desarrollo y ejecución de código en la nube.
+
+Excel: Revisión y validación de datos adicionales.
+
 **EDA Cash request**
 
 ![mapa_calor_cash_request](https://github.com/user-attachments/assets/b5fe3792-5714-4c50-acfc-51cc24b010d3)
