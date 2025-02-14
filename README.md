@@ -17,7 +17,7 @@
 ![desc_fee_2](https://github.com/user-attachments/assets/f83c6bf7-eac6-44a9-af2d-b78bf3ff0a3e)
 ![desc_fee_3](https://github.com/user-attachments/assets/739ad5b6-dcc0-4cae-8b78-21115deaa780)
 
-**Ingeneria de Caracteristicas**
+**INGENIERIA DE CARACTERISTICAS**
 
 
 
