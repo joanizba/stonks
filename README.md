@@ -25,6 +25,24 @@
 
 **COHORTES**
 
+Varios Cohortes
+
+Retención clientes
+
+![tasa_retención](https://github.com/user-attachments/assets/750de52f-e7d8-4d7a-a305-bbe4e27d7140)
+
+Abondo clientes
+
+![tasa_abandono](https://github.com/user-attachments/assets/1b6672de-bb2c-4e5a-ad79-4024245bea52)
+
+Retención Solicitudes
+
+![tasa_ret_sol](https://github.com/user-attachments/assets/cb6fcc74-5a30-4d3f-ba56-1e69663631e1)
+
+Abandono Solicitudes
+
+![tasa_abandono_sol](https://github.com/user-attachments/assets/c606d22a-50a1-46af-a85d-4d57769e6586)
+
 Cohorte de top 10 usuarios
 
 Por mes
