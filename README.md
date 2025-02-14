@@ -23,8 +23,17 @@
 
 
 
+**COHORTES**
 
+Cohorte de top 10 usuarios
 
+Por mes
+
+![top10_users](https://github.com/user-attachments/assets/b2c72370-b26d-4f4a-ba9f-b6990f31a9dc)
+
+Por semana
+
+![Top10_users_w](https://github.com/user-attachments/assets/8d774d84-61c1-4c30-b381-922a7cc2aa6d)
 
 
 
