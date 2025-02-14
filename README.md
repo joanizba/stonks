@@ -1,6 +1,6 @@
 # stonks
-**ESTE APARTADO ES PARA EDA E INGENIERIA DE CARAC**
-** EDA Cash request **
+**ESTE APARTADO ES PARA EDA E INGENIERIA DE CARAC** \n
+**EDA Cash request**
 ![mapa_calor_cash_request](https://github.com/user-attachments/assets/b5fe3792-5714-4c50-acfc-51cc24b010d3)
 ![image](https://github.com/user-attachments/assets/448e3a73-8879-4316-b4f9-a04e2a3d7ec8)
 ![descompse_cash_request](https://github.com/user-attachments/assets/7e9fdf9f-6a6c-499a-8f8f-b16d52768934)
