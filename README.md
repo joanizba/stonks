@@ -147,65 +147,75 @@ los datos de prueba tiene un puntaje del 80%. Para saber si el modelo es bueno, 
 Un resultado decente.
 Aquí observamos la gráfica para el modelo con grado 6 y alpha 1
 
-![image](https://github.com/user-attachments/assets/fd03a18b-54f1-432f-b815-1b1cf4bc6334)
-
 
 Si ampliamos el ratio de búsqueda observamos que grado 8 con alpha 100 también da resultados interesantes
 
-![image](https://github.com/user-attachments/assets/133ce743-08ab-4f7f-8aa1-347d5e650a04) 
+![image](https://github.com/user-attachments/assets/a55620da-ea22-49d3-bbbe-3052053e5b51)
+![image](https://github.com/user-attachments/assets/d2017d01-5b1d-4e73-976a-9bd204720c89)
+
 
 Utilizando el metodo de la Validación cruzada, podemos observar cual es el mejor grado del polinomio para un alpha.
-Aquí vemos que para alpha = 0.001 los meodelos mas estables son entre el grado 7 y 10, donde tienen una mediana alta, pocos outliers y varianza moderada.
+Siendo alpha 100 el mejor resultado, aplicamos validación cruzada para ver el comportamiento de los diferentes grados del polinomio.
 
-![image](https://github.com/user-attachments/assets/d3f0c626-359d-43a9-927c-1c592e1c31fa)
+![image](https://github.com/user-attachments/assets/2b66ea0f-876d-43ff-85b2-fcd878cf49fa)
 
-Para alpha=1 se observa que los modelos no acaban de funcionar muy bien, tal vez para grado 6 como vimos antes pero está en zona negativa
 
-![image](https://github.com/user-attachments/assets/b9470bc8-f19d-4be2-9b44-9378e7fcdecf)
+Como vemos la diferencia del polinomio es practicamente 0 y la R^2 de interpolación es practicamente 1, lo que signfica que para interpolación va muy bien, pero
+para extrapolación no es muy útil ya que tiene sobreajuste.
 
-Para alphas mas grandes como 100, vemos que los modelos no son muy estables. 
+Observamos que para predecir no son muy buenos.
 
-![image](https://github.com/user-attachments/assets/4859c642-70ee-4e4b-8695-398b8a28b694)
+![image](https://github.com/user-attachments/assets/2eb5e0f3-7cd6-40cf-90f7-252cda0bf2b3)
+
+
+observamos la importancia de los coeficientes, podemos ver que el de grado 7 tiene un impacto muy bajo.
+![image](https://github.com/user-attachments/assets/10b8ff0a-664f-46c3-b31e-65b2cb0a95eb)
+
+Pero si hacemos el absoluto...
+
+![image](https://github.com/user-attachments/assets/8c7abee0-c450-42c0-ab36-699d016ebdf7)
+
+Para alpha 1, vemos que el grado 6 se adapta a los datos mejor que antes
+
+![image](https://github.com/user-attachments/assets/c7c7fc0e-f9c8-4431-8866-fcd417cb2b33)
+
+Pero para predecir continuamos obteniendo valores negativos.
+
+![image](https://github.com/user-attachments/assets/846aa510-6456-42c0-ad5c-d9c40d04e46d)
 
 Pasamos ahora a los modelos de cohortes semanales, monto acumulado.
 
-Primeros modelos (Datos separados en 40%test):
+Buscamos los mejores parámetros (Datos separados en 20%test):
 
-![image](https://github.com/user-attachments/assets/4c50dc66-044a-416e-a957-522a03a623a4)
+![image](https://github.com/user-attachments/assets/bbb422ac-5987-4f53-83a0-c81e3ce11099)
 
-![image](https://github.com/user-attachments/assets/d4ddb136-2601-48c6-bb4a-98fb26ec9505)
+![image](https://github.com/user-attachments/assets/cc5e706b-98ad-4627-b94b-e3b1e2ecd6cb)
 
-Mejor resultado 
+Nos indica que el mejor resutlado es 6 con alpha 10:
 
-![image](https://github.com/user-attachments/assets/f76e224b-f30d-4a4b-a594-98c940c16f92)
+![image](https://github.com/user-attachments/assets/8d1abeb4-ebda-4418-bd24-b3e4a4a1f7b6)
+![image](https://github.com/user-attachments/assets/159e6b89-16ce-4b08-8356-36b9080649dc)
+![image](https://github.com/user-attachments/assets/61affd6a-f724-4ea9-b5e8-ba45912640c8)
 
-Vemos la distribución para alpha 0.01. 
 
-![image](https://github.com/user-attachments/assets/33e67d84-2a8f-4684-a958-6d33caac1aa7)
+Observamos la estabilidad del modelo para diferentes grados del polinomio con validación cruzada.
 
-Vemos como actua el modelo en la predicción a semanas futuras
+![image](https://github.com/user-attachments/assets/3ec7fc52-8b3e-4428-8c3e-5dca3c259999)
 
-![image](https://github.com/user-attachments/assets/5da1f98d-61b2-4f50-acc5-fa6edafc0a55)
+Importancia de los coeficientes
 
-Aquí podemos ver la importancia de los coeficientes 
+![image](https://github.com/user-attachments/assets/c5daf820-4122-4679-8ff7-d6114d190781)
 
-![image](https://github.com/user-attachments/assets/df880636-9c53-488b-b84b-325ada6dbc84)
+Y los absolutos
 
-Y la importancia absoluta de los coeficientes de ridge.
+![image](https://github.com/user-attachments/assets/a37f7028-4c4c-4948-931e-830642b5ed7a)
 
-![image](https://github.com/user-attachments/assets/4cf13244-a227-4c17-a47d-c6f27346c309)
 
-Grado 6 alpha 100
+También grado 4 alpha 0.1
 
-![image](https://github.com/user-attachments/assets/fadbed0a-47be-4a6c-a366-fc1bc8e0948d)
+![image](https://github.com/user-attachments/assets/58a0fb3f-c095-4804-a778-de5cf58281c3)
 
-Para predecir
 
-![image](https://github.com/user-attachments/assets/bd6baa16-b85c-45a3-b82e-73a834272ae3)
-
-Importancia e importancia absoluta de los coeficientes
-![image](https://github.com/user-attachments/assets/19351d6c-fc44-467f-bfd5-cec6b5315c0e)
-![image](https://github.com/user-attachments/assets/26dcdee8-3d52-4ce8-8491-c3d1c4aeb97c)
 
 
 
