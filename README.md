@@ -125,6 +125,51 @@ Por semana
 ![Top10_users_w](https://github.com/user-attachments/assets/8d774d84-61c1-4c30-b381-922a7cc2aa6d)
 
 
+Tasa retención clasficado (bronce,plata,oro) por mes inicial y el amount. Todos los usuarios.
+
+![tasa_bronce](https://github.com/user-attachments/assets/a3231151-cdc8-4e46-a90b-1c8c6a86350e)
+
+![tasa_plata](https://github.com/user-attachments/assets/99b21130-1d5a-4152-80ff-88c05c66cf54)
+
+![tasa_oro](https://github.com/user-attachments/assets/6178af83-104c-48f5-a00b-bb70db420aab)
+
+Mismo cohorte pero el acumulado.
+
+![tasa_acum_bronce](https://github.com/user-attachments/assets/66867ddf-75b8-4dc1-8d35-b60b76e810e7)
+
+![tasa_acum_plata](https://github.com/user-attachments/assets/f4bdb76e-0dba-4903-a648-c29428eea0ea)
+
+![tasa_acum_oro](https://github.com/user-attachments/assets/6305938c-1075-4ca1-95f2-2496c3eb02c2)
+
+Tasa retención clasficado (bronce,plata,oro) por mes inicial y el amount. usuarios activos.
+
+![u_a_bronce](https://github.com/user-attachments/assets/eb94981d-4ea8-4cf6-97f5-6ea6bc3feb11)
+
+![u_a_plata](https://github.com/user-attachments/assets/a0ffa6b9-9a4d-4ad6-b223-d5ff7b9bd13e)
+
+![u_a_oro](https://github.com/user-attachments/assets/f36a57d6-7b82-43d0-978c-aa30e1c4ea1c)
+
+los acumulados de los usuarios activos.
+
+![u_a_acum_bronce](https://github.com/user-attachments/assets/11d4238f-3a39-4b09-ab50-0dd239edc237)
+
+![u_a_acum_plata](https://github.com/user-attachments/assets/bfd569fc-237f-40c3-96df-ca0b36eb4618)
+
+![u_a_acum_oro](https://github.com/user-attachments/assets/e2bb654c-0ac4-45e5-9a5b-7aa259437e50)
+
+Tasa retención clasficado (bronce,plata,oro) por mes inicial y el amount. usuarios eliminados.
+
+![u_d_bronce](https://github.com/user-attachments/assets/b6bd6209-b156-4ef4-93c4-6995e6698953)
+
+![u_d_plata](https://github.com/user-attachments/assets/acb1d29e-3481-438b-9d6c-7c94ad31d3e1)
+
+los acumulados de los usuarios elimindaos.
+
+![u_d_acum_bronce](https://github.com/user-attachments/assets/f0ba6791-2986-4670-aeb9-86677f978c13)
+
+![u_d_acum_plata](https://github.com/user-attachments/assets/5a1c9188-d2fb-494b-a526-b5dae46d451b)
+
+
 
 
 **MODELO DE REGRESIÓN**
