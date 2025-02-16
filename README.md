@@ -1,74 +1,58 @@
-# stonks
+# **STONKS**
 
-**Introducción**
+## **Introducción**
 
 Este proyecto tiene como objetivo analizar y extraer insights clave a partir de datos relacionados con tarifas (fees) y solicitudes de adelanto de efectivo (cash requests) dentro de Business Payments, una empresa de servicios financieros. A través de este estudio, se busca comprender mejor el comportamiento de los usuarios, evaluar el impacto de diferentes tipos de tarifas y detectar patrones que puedan ayudar en la toma de decisiones estratégicas.
 
-**Conjuntos de Datos**
+###Conjuntos de Datos
 
 El análisis se basa en dos conjuntos de datos principales:
 
-1- Solicitudes de Efectivo (cash requests)
+**1- Solicitudes de Efectivo (Cash Requests)**
 
-Registra todas las transacciones en las que los usuarios solicitan adelantos de efectivo, permitiendo analizar tendencias de uso y posibles factores de riesgo.
+Este conjunto de datos documenta todas las operaciones en las que los usuarios piden adelantos de efectivo, facilitando el estudio de patrones de uso y la identificación de posibles riesgos.
 
-Número de registros: 23,970
+- **Total de registros:** 23,970
+- **Cantidad de columnas:** 16
 
-Número de columnas: 16
+**Columnas destacadas:**
+- `id`: Código único de la solicitud.
+- `amount`: Importe solicitado.
+- `status`: Estado de la solicitud (`approved`, `pending`, `rejected`).
+- `user_id`: ID del usuario que realizó la solicitud.
+- `reimbursement_date`: Fecha prevista para el reembolso.
+- `transfer_type`: Categoría de transferencia.
 
-Principales columnas:
+---
 
-id: Identificador único de la solicitud.
+**2- Tarifas (Fees)**
 
-amount: Monto solicitado.
+Proporciona detalles sobre las tarifas cobradas a los usuarios por diversos conceptos, como pagos inmediatos, fallos en reembolsos y aplazamientos de pagos.
 
-status: Estado de la solicitud (approved, pending, rejected).
+- **Total de registros:** 21,061
+- **Cantidad de columnas:** 13
 
-user_id: Identificador del usuario que realizó la solicitud.
+**Columnas destacadas:**
+- `id`: Código único de la tarifa.
+- `cash_request_id`: ID de la solicitud de efectivo asociada.
+- `type`: Clasificación de la tarifa (`instant_payment`, `split_payment`, `incident`, `postpone`).
+- `status`: Estado de la tarifa (`confirmed`, `rejected`, `cancelled`, `accepted`).
+- `total_amount`: Importe total.
+- `created_at`: Fecha de registro.
 
-reimbursement_date: Fecha estimada de reembolso.
-
-transfer_type: Tipo de transferencia utilizada.
-
-2. Tarifas (fees)
-
-Contiene información detallada sobre las tarifas aplicadas a los usuarios por diferentes conceptos, como pagos instantáneos, incidentes de reembolso fallidos y aplazamientos de pago.
-
-Número de registros: 21,061
-
-Número de columnas: 13
-
-Principales columnas:
-
-id: Identificador único de la tarifa.
-
-cash_request_id: Identificador de la solicitud de efectivo relacionada.
-
-type: Tipo de tarifa (instant_payment, split_payment, incident, postpone).
-
-status: Estado de la tarifa (confirmed, rejected, cancelled, accepted).
-
-total_amount: Monto total de la tarifa.
-
-created_at: Fecha de creación de la tarifa.
+---
 
 **Objetivos**
+- Analizar y depurar los datos para asegurar su calidad y coherencia.
+- Identificar tendencias de uso y frecuencia de pagos para analizar el comportamiento de los usuarios.
+- Implementar análisis de cohortes para estudiar la retención y comportamiento a lo largo del tiempo.
+- Desarrollar un modelo de clasificación que anticipe qué usuarios podrían abandonar la plataforma.
 
-Exploración y limpieza de datos para garantizar calidad y consistencia.
+**Herramientas y Tecnologías Usadas**
+- **Python:** Procesamiento de datos con `pandas`, `numpy`, `matplotlib`, `seaborn`, `scikit-learn`.
+- **Google Colab:** Ejecución y desarrollo de scripts en la nube.
+- **Excel:** Inspección y verificación adicional de datos.
 
-Identificación de patrones de uso y frecuencia de pagos para entender el comportamiento de los usuarios.
-
-Análisis de cohortes para entender la retención y el comportamiento de los usuarios a lo largo del tiempo.
-
-Modelo de clasificación para detectar usuarios con possibilidad de irse de la plataforma.
-
-Tecnologías y Herramientas Utilizadas
-
-Python: Análisis de datos con pandas, numpy, matplotlib, seaborn, skitlearn
-
-Google Colab: Desarrollo y ejecución de código en la nube.
-
-Excel: Revisión y validación de datos adicionales.
 
 **EDA Cash request**
 
@@ -172,7 +156,7 @@ los acumulados de los usuarios elimindaos.
 
 
 
-**MODELO DE REGRESIÓN**
+# **MODELO DE REGRESIÓN**
 
 Aplicamos una cohorte de nacimiento para agrupar a los usuarios por el mes de su primera solicitud.
 Graficamos el monto acumulado por cada cohorte
@@ -228,7 +212,7 @@ Pero para predecir continuamos obteniendo valores negativos.
 
 ![image](https://github.com/user-attachments/assets/846aa510-6456-42c0-ad5c-d9c40d04e46d)
 
-Pasamos ahora a los modelos de cohortes semanales, monto acumulado.
+**Modelo de interpolación cohorte semanales**
 
 Buscamos los mejores parámetros (Datos separados en 20%test):
 
