@@ -4,7 +4,7 @@
 
 Este proyecto tiene como objetivo analizar y extraer insights clave a partir de datos relacionados con tarifas (fees) y solicitudes de adelanto de efectivo (cash requests) dentro de Business Payments, una empresa de servicios financieros. A través de este estudio, se busca comprender mejor el comportamiento de los usuarios, evaluar el impacto de diferentes tipos de tarifas y detectar patrones que puedan ayudar en la toma de decisiones estratégicas.
 
-###Conjuntos de Datos
+### Conjuntos de Datos
 
 El análisis se basa en dos conjuntos de datos principales:
 
