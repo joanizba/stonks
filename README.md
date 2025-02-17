@@ -64,8 +64,27 @@ Proporciona detalles sobre las tarifas cobradas a los usuarios por diversos conc
 
 ## **INGENIERIA DE CARACTERISTICAS**
 
+![image](https://github.com/user-attachments/assets/41cefcb4-e537-4b43-98ce-f2c14728a648)
 
+![image](https://github.com/user-attachments/assets/549a4a29-a07f-4ef1-8e20-adb30f45a1a1)
 
+![image](https://github.com/user-attachments/assets/701ac90f-d416-4798-88a4-87c1e2a651ba)
+
+![image](https://github.com/user-attachments/assets/743e008e-e6f2-47cf-8a3c-9d041bf659e7)
+
+![image](https://github.com/user-attachments/assets/eddccfd2-4afe-4737-b4b2-319dd8e094e2)
+
+![image](https://github.com/user-attachments/assets/68ea4fdd-4f25-4202-95f0-38a719cb9e85)
+
+![image](https://github.com/user-attachments/assets/dbf27ee7-07a8-4d06-affe-eb8137255d4a)
+
+![image](https://github.com/user-attachments/assets/4eae388c-9535-4045-a2de-3252acf8ea09)
+
+![image](https://github.com/user-attachments/assets/45be7d40-c85b-49c8-8f6f-593d500feba9)
+
+![image](https://github.com/user-attachments/assets/224f55cd-b7a1-42b6-a0f4-032437ecc702)
+
+![image](https://github.com/user-attachments/assets/bc576e24-e4b6-49af-bcd2-53138e17b244)
 
 
 ### **COHORTES**
