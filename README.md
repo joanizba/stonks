@@ -68,7 +68,7 @@ Proporciona detalles sobre las tarifas cobradas a los usuarios por diversos conc
 
 
 
-## **COHORTES**
+### **COHORTES**
 
 Varios Cohortes
 
@@ -146,7 +146,7 @@ los acumulados de los usuarios elimindaos.
 
 
 
-# **MODELO DE REGRESIÓN**
+## **MODELO DE REGRESIÓN**
 
 Aplicamos una cohorte de nacimiento para agrupar a los usuarios por el mes de su primera solicitud.
 Graficamos el monto acumulado por cada cohorte
