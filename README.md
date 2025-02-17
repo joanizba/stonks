@@ -229,12 +229,51 @@ Y los absolutos
 
 ![image](https://github.com/user-attachments/assets/a37f7028-4c4c-4948-931e-830642b5ed7a)
 
+## CLASIFICADORES
 
-También grado 4 alpha 0.1
-
-![image](https://github.com/user-attachments/assets/58a0fb3f-c095-4804-a778-de5cf58281c3)
+A partir de los usuarios activos clasificados por rango, generamos los modelos clasificadores.
 
 
+### Árbol de decisión
+
+Asignamos a las variables las caracterísitcas de entraada y los valores a clasificar
+
+![image](https://github.com/user-attachments/assets/616271fc-96a2-40f9-9b0b-5c4749b19939)
+
+Y generamos el modelo:
+![image](https://github.com/user-attachments/assets/0d3ad31d-7e3d-47e1-bcd7-3bcd221cce1e)
+
+Métricas
+
+![image](https://github.com/user-attachments/assets/8b13291b-ad5c-4302-be26-ef21c8064c4b)
+
+"Curva" AUROC
+
+![image](https://github.com/user-attachments/assets/af838961-131b-48e9-ab70-7008f2f98158)
+
+"Curvas" de aprendizaje
+
+![image](https://github.com/user-attachments/assets/a839116f-c8d8-45b1-a048-054521d3b5ff)
+
+Se observa que el maximo de número de datos conjuntos necesarios han sido 5000.
+
+
+
+### KNN
+
+Buscamos el mejor numero de vecinos para el modelo KNN:
+
+![image](https://github.com/user-attachments/assets/70f79919-1d68-490b-a202-f55438e73b2c)
+
+
+Observamos las metricas y vemos que son practicamente perfectas.
+
+![image](https://github.com/user-attachments/assets/7f9482e8-b9ac-4b5a-83e0-53bf79ce3daf)
+
+
+Comparación de modelos
+
+![image](https://github.com/user-attachments/assets/53a41672-e5c0-4b66-80b7-faca6c3b3ac3)
 
 
 
