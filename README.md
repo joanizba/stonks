@@ -4,7 +4,7 @@
 
 Este proyecto tiene como objetivo analizar y extraer insights clave a partir de datos relacionados con tarifas (fees) y solicitudes de adelanto de efectivo (cash requests) dentro de Business Payments, una empresa de servicios financieros. A través de este estudio, se busca comprender mejor el comportamiento de los usuarios, evaluar el impacto de diferentes tipos de tarifas y detectar patrones que puedan ayudar en la toma de decisiones estratégicas.
 
-###Conjuntos de Datos
+### Conjuntos de Datos
 
 El análisis se basa en dos conjuntos de datos principales:
 
@@ -42,33 +42,33 @@ Proporciona detalles sobre las tarifas cobradas a los usuarios por diversos conc
 
 ---
 
-**Objetivos**
+### **Objetivos**
 - Analizar y depurar los datos para asegurar su calidad y coherencia.
 - Identificar tendencias de uso y frecuencia de pagos para analizar el comportamiento de los usuarios.
 - Implementar análisis de cohortes para estudiar la retención y comportamiento a lo largo del tiempo.
 - Desarrollar un modelo de clasificación que anticipe qué usuarios podrían abandonar la plataforma.
 
-**Herramientas y Tecnologías Usadas**
+### **Herramientas y Tecnologías Usadas**
 - **Python:** Procesamiento de datos con `pandas`, `numpy`, `matplotlib`, `seaborn`, `scikit-learn`.
 - **Google Colab:** Ejecución y desarrollo de scripts en la nube.
 - **Excel:** Inspección y verificación adicional de datos.
 
 
-**EDA Cash request**
+## **EDA Cash request**
 
 ![mapa_calor_cash_request](https://github.com/user-attachments/assets/b5fe3792-5714-4c50-acfc-51cc24b010d3)
 
-**EDA fees**
+## **EDA fees**
 
 ![mapa_calor_fees](https://github.com/user-attachments/assets/399d231d-be38-47aa-a554-665b2a50f54b)
 
-**INGENIERIA DE CARACTERISTICAS**
+## **INGENIERIA DE CARACTERISTICAS**
 
 
 
 
 
-**COHORTES**
+## **COHORTES**
 
 Varios Cohortes
 
