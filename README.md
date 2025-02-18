@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/ddfa0cbe-f3eb-43ca-bfb6-6063b71a5a0d)# **STONKS**
+# **STONKS**
 
 ## **Introducción**
 
