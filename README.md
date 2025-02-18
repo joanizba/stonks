@@ -1,4 +1,4 @@
-# **STONKS**
+![image](https://github.com/user-attachments/assets/ddfa0cbe-f3eb-43ca-bfb6-6063b71a5a0d)# **STONKS**
 
 ## **Introducción**
 
@@ -176,26 +176,24 @@ Incluso las cohortes con mayor monto acumulado siguen esta tendencia.
 Observamos que los montos del primer mes de cada cohorte es superior al de la cohorte anterior, lo que quiere decir que está ganando popularidad. 
 Los meses en los que se dispara debe ser alguna promoción, puede ser alguna de verano ya que coincide estos meses.
 
-Para crear el modelo, cogimos los datos de la segunda cohorte. Realizamos una bísqueda de hiperparámetros, GridSearch. Graficamos las combinaciones.
+Para crear el modelo, cogimos los datos de la segunda cohorte. Realizamos una búsqueda de hiperparámetros. Graficamos las combinaciones.
 
-![image](https://github.com/user-attachments/assets/0712b17c-eda4-4330-b48b-42c8f01ab4c1)
-
-Podemos ver que diferentes configuraciones del modelo. Observamos que para grado 6 y alpha 1 el acierto en los datos de entrenamiento es casi perfecta y para 
-los datos de prueba tiene un puntaje del 80%. Para saber si el modelo es bueno, hacemos la diferencia del coeficiente de determinación y nos da de resultado 0.199.
-Un resultado decente.
-Aquí observamos la gráfica para el modelo con grado 6 y alpha 1
+![image](https://github.com/user-attachments/assets/15cfa6fb-0b78-4430-b285-ee6f4647b846)
+![image](https://github.com/user-attachments/assets/d72596cf-08a0-4f14-81cb-67517f5ab31e)
 
 
-Si ampliamos el ratio de búsqueda observamos que grado 8 con alpha 100 también da resultados interesantes
+Podemos ver que diferentes configuraciones del modelo. Observamos que para grado 8 y alpha 100 el acierto en los datos de entrenamiento es casi perfecta y para 
+los datos de prueba tiene un puntaje del 95%. Para saber si el modelo es bueno, hacemos la diferencia del coeficiente de determinación.
+Aquí observamos la gráfica para el modelo con grado 8 y alpha 100
 
-![image](https://github.com/user-attachments/assets/a55620da-ea22-49d3-bbbe-3052053e5b51)
-![image](https://github.com/user-attachments/assets/d2017d01-5b1d-4e73-976a-9bd204720c89)
+![image](https://github.com/user-attachments/assets/149fb660-727a-496c-9e81-dbd58d13cad4)
+![image](https://github.com/user-attachments/assets/e945e5e8-a4cd-4130-883f-47037ac40b9a)
 
 
 Utilizando el metodo de la Validación cruzada, podemos observar cual es el mejor grado del polinomio para un alpha.
 Siendo alpha 100 el mejor resultado, aplicamos validación cruzada para ver el comportamiento de los diferentes grados del polinomio.
 
-![image](https://github.com/user-attachments/assets/2b66ea0f-876d-43ff-85b2-fcd878cf49fa)
+![image](https://github.com/user-attachments/assets/2bc50627-fffd-4114-8510-3819a06ed18d)
 
 
 Como vemos la diferencia del polinomio es practicamente 0 y la R^2 de interpolación es practicamente 1, lo que signfica que para interpolación va muy bien, pero
@@ -203,37 +201,41 @@ para extrapolación no es muy útil ya que tiene sobreajuste.
 
 Observamos que para predecir no son muy buenos.
 
-![image](https://github.com/user-attachments/assets/2eb5e0f3-7cd6-40cf-90f7-252cda0bf2b3)
+![image](https://github.com/user-attachments/assets/9551d293-6bf1-4591-b5cd-579d072185c2)
 
 
-observamos la importancia de los coeficientes, podemos ver que el de grado 7 tiene un impacto muy bajo.
+
+Observamos la importancia de los coeficientes.
+
 ![image](https://github.com/user-attachments/assets/10b8ff0a-664f-46c3-b31e-65b2cb0a95eb)
 
-Pero si hacemos el absoluto...
+En absolutos
 
 ![image](https://github.com/user-attachments/assets/8c7abee0-c450-42c0-ab36-699d016ebdf7)
 
-Para alpha 1, vemos que el grado 6 se adapta a los datos mejor que antes
+Hacemos una búsqueda para alpha 1, ya que es el segundo mejor alpha que se encuentra haciendo la búsqueda de parámetros
 
-![image](https://github.com/user-attachments/assets/c7c7fc0e-f9c8-4431-8866-fcd417cb2b33)
+![image](https://github.com/user-attachments/assets/066772ab-b64e-4daa-a9c7-d9febdffc697)
+
 
 Pero para predecir continuamos obteniendo valores negativos.
 
-![image](https://github.com/user-attachments/assets/846aa510-6456-42c0-ad5c-d9c40d04e46d)
+![image](https://github.com/user-attachments/assets/df37b178-05ac-4945-bad0-3f7f1c477e6e)
+
 
 **Modelo de interpolación cohorte semanales**
 
 Buscamos los mejores parámetros (Datos separados en 20%test):
 
-![image](https://github.com/user-attachments/assets/bbb422ac-5987-4f53-83a0-c81e3ce11099)
+![image](https://github.com/user-attachments/assets/3648ff59-f9b8-43bd-a94f-edfad6f976c9)
 
-![image](https://github.com/user-attachments/assets/cc5e706b-98ad-4627-b94b-e3b1e2ecd6cb)
+![image](https://github.com/user-attachments/assets/a0ed2bf4-ff9d-4b8e-9e82-b45397772ed5)
 
-Nos indica que el mejor resutlado es 6 con alpha 10:
 
-![image](https://github.com/user-attachments/assets/8d1abeb4-ebda-4418-bd24-b3e4a4a1f7b6)
-![image](https://github.com/user-attachments/assets/159e6b89-16ce-4b08-8356-36b9080649dc)
-![image](https://github.com/user-attachments/assets/61affd6a-f724-4ea9-b5e8-ba45912640c8)
+Nos indica que el mejor resutlado es 3 con alpha 100:
+
+![image](https://github.com/user-attachments/assets/b5b0b248-16b5-4216-9ef4-3807d854c00b)
+![image](https://github.com/user-attachments/assets/2eaec5f9-d19a-455a-88d3-39ff4362a81f)
 
 
 Observamos la estabilidad del modelo para diferentes grados del polinomio con validación cruzada.
@@ -242,11 +244,9 @@ Observamos la estabilidad del modelo para diferentes grados del polinomio con va
 
 Importancia de los coeficientes
 
-![image](https://github.com/user-attachments/assets/c5daf820-4122-4679-8ff7-d6114d190781)
+![image](https://github.com/user-attachments/assets/07d29c6e-dac1-4f4d-9171-447181fd5d11)
 
-Y los absolutos
 
-![image](https://github.com/user-attachments/assets/a37f7028-4c4c-4948-931e-830642b5ed7a)
 
 ## CLASIFICADORES
 
