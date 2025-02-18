@@ -163,6 +163,9 @@ los acumulados de los usuarios elimindaos.
 ![u_d_acum_plata](https://github.com/user-attachments/assets/5a1c9188-d2fb-494b-a526-b5dae46d451b)
 
 
+## **MATRIZ CORR**
+
+![image](https://github.com/user-attachments/assets/ae9fd245-c281-43f0-b5c5-cbbec10be4fe)
 
 
 ## **MODELO DE REGRESIÓN**
